@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """module"""
 
+
 class Square:
-    """ class square"""
+    """class square"""
 
     width = 0
     height = 0
@@ -21,6 +22,7 @@ class Square:
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """printe width and height"""
         return "{}/{}".format(self.width, self.height)
 
 
