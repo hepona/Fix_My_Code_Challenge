@@ -4,33 +4,29 @@ square class
 """
 
 
-class Square:
+class Square():
     """attribute"""
 
-    def __init__(self, size=0):
+    def __init__(self, width, height):
         """init"""
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        else:
-            self.size = size
+        self.width = width
+        self.height = height
 
     def area_of_my_square(self):
         """Area of the square"""
-        return self.size * self.size
+        return self.width * self.height
 
     def perimeter_of_my_square(self):
         """permiter of square"""
-        return self.size * 4
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
         """str"""
-        return "{}".format(self.size)
+        return "{}/{}".format(self.width, self.height)
 
 
 if __name__ == "__main__":
-    s = Square(size=12)
+    s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
     print(s.perimeter_of_my_square())
