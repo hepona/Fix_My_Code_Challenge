@@ -14,10 +14,14 @@ class Square:
 
     def area_of_my_square(self):
         """Area of the square"""
+        if self.width != self.height:
+            return print("This is not a square")
         return self.width * self.height
 
     def perimeter_of_my_square(self):
         """permiter of square"""
+        if self.width != self.height:
+            return print("This is not a square")
         return self.width * 4
 
     def __str__(self):
