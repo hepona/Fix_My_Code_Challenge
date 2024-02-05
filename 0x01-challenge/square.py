@@ -7,9 +7,6 @@ square class
 class Square:
     """attribute"""
 
-    width = 0
-    height = 0
-
     def __init__(self, width, height):
         """init"""
         self.width = width
