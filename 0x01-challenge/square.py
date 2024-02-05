@@ -9,6 +9,7 @@ class Square:
     height = 0
 
     def __init__(self, *args, **kwargs):
+        """ initialisation of variable"""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
