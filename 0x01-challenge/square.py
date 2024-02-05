@@ -8,12 +8,12 @@ class Square:
     """attribute"""
 
     width = 0
-    height = width
+    height = 0
 
     def __init__(self, width, height):
         """init"""
         self.width = width
-        self.height = self.width
+        self.height = height
 
     def area_of_my_square(self):
         """Area of the square"""
