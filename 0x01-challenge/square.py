@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""module"""
+"""A module"""
 
 
 class Square:
-    """class Square"""
+    """class Square test push"""
 
     width = 0
     height = 0
@@ -15,7 +15,7 @@ class Square:
 
     def area_of_my_square(self):
         """Area of the square"""
-        return self.width * self.width
+        return self.width * self.height
 
     def permiter_of_my_square(self):
         """perimeter of square"""
